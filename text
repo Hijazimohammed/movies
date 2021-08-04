@@ -1,0 +1,20 @@
+npm install -g heroku
+
+git init
+
+git add .
+
+git commit -m "My first commit"
+
+heroku create
+
+git remote -v
+
+git checkout master
+
+git push heroku master
+
+heroku git:remote -a warm-bastion-05833
+///https://git.heroku.com/warm-bastion-05833.git
+
+git push heroku master

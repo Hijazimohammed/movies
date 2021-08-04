@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node && Express</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>RESTFUL API</h1>
+  <form id="user_form">
+    <field>
+      <label for="">--GET--</label>
+      <input type="text" id="movieId" name="movieId" placeholder="Movie id">
+      <button id="getButton" value="submit" type="submit"> Get Movies</button>
+      <br>
+    </field>
+  </form>
+  <form id="user_form_post">
+    <field>
+      <label>--Post--</label><br>
+      <label>movieDirector : </label>
+      <input type="text" id="directorInput" name="movieDirector" placeholder="post Modirectorvie">
+      <label> movieTitle : </label>
+      <input type="text" id="movieInput" name="movieTitle" placeholder="post Movie">
+      <button id="postButton" name="postButton" method="POST">POST</button>
+    </field>
+  </form>
+  <form action="" id="user_form_delete">
+    <field>
+      <label>--DELETE--</label><br>
+      <label>Mocvie Id : </label>
+      <input type="text" id="movieId" name="movieId" placeholder="Movie Id">
+      <button type="submit" id="deleteButton" name="deleteButton" method="DELETE">Delete </button>
+    </field>
+  </form>
+  <form action="" id="user_form_put">
+    <field>
+      <label>--PUT--</label><br>
+      <label>movie Director : </label>
+      <input type="text" id="directorInput" name="movieDirector" placeholder="Update Movie director">
+      <label> movie Title : </label>
+      <input type="text" id="movieInput" name="movieTitle" placeholder="Update Movie">
+      <label> movie Id : </label>
+      <input type="text" id="movieId" name="movieId" placeholder="movie id">
+      <button id="putButton" name="putButton" method="PUT">PUT</button>
+    </field>
+  </form>
+  <h1>Movies :</h1>
+  <div id="results">
+    <p id="error"></p>
+  </div>
+  <script src="./api.js"></script>
+</body>
+
+</html>
